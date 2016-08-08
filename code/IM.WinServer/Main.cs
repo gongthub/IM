@@ -31,6 +31,8 @@ namespace IM.WinServer
             logListen.AddLogsChangeHandler(OnChange_Logs);
             string logs = LogHelp.logHelp.GetLogsRedis(20);
             txtShow.Text = logs;
+            btnStart.Enabled = true;
+            btnStop.Enabled = false;
         }
 
         #region Logs发生改变事件 -void OnChange_Logs(object sender, EventArgs e)
@@ -72,6 +74,17 @@ namespace IM.WinServer
             server.Stop();
             btnStart.Enabled = true;
             btnStop.Enabled = false;
+        }
+
+        /// <summary>
+        /// 清空日志
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Common.LogHelp.logHelp.ClearLogs();
+            OnChange_Logs(null,null);
         }
     }
 }

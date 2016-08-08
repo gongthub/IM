@@ -1,0 +1,12 @@
+D:\软件开发项目\NetworkApp\SyncChatClient\obj\Debug\ResolveAssemblyReference.cache
+D:\软件开发项目\NetworkApp\SyncChatClient\obj\Debug\SyncChatClient.MainForm.resources
+D:\软件开发项目\NetworkApp\SyncChatClient\obj\Debug\SyncChatClient.Properties.Resources.resources
+D:\软件开发项目\NetworkApp\SyncChatClient\obj\Debug\SyncChatClient.csproj.GenerateResource.Cache
+D:\软件开发项目\NetworkApp\SyncChatClient\bin\Debug\SyncChatClient.exe
+D:\软件开发项目\NetworkApp\SyncChatClient\bin\Debug\SyncChatClient.pdb
+D:\软件开发项目\NetworkApp\SyncChatClient\obj\Debug\SyncChatClient.exe
+D:\软件开发项目\NetworkApp\SyncChatClient\obj\Debug\SyncChatClient.pdb
+C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\obj\Debug\SyncChatClient.exe
+C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\obj\Debug\SyncChatClient.pdb
+D:\Socket\socket\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\obj\Debug\SyncChatClient.exe
+D:\Socket\socket\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\obj\Debug\SyncChatClient.pdb

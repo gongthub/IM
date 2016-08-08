@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SyncChatClient">
+</Property><Property Name="解决方案文件" Value="C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\SyncChatClient.sln">
+</Property><Property Name="Date" Value="2013年10月13日">
+</Property><Property Name="Time" Value="14:48:26">
+</Property></Properties><Event ErrorLevel="0" Project="SyncChatClient" Source="SyncChatClient.csproj" Description="项目文件已成功备份为 C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\Backup\SyncChatClient.csproj">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="MainForm.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\Backup\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="MainForm.Designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\Backup\MainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="Program.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="Properties\Resources.Designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="Properties\Settings.Designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="Properties\Settings.settings" Description="文件已成功备份为 C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="MainForm.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\Backup\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="Properties\Resources.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\Socket聊天程序（一个服务端，多个客户端）\Socket聊天程序（一个服务端，多个客户端）\SyncChatClient\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="SyncChatClient.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="SyncChatClient" Source="SyncChatClient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SyncChatClient" Source="SyncChatClient.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>
