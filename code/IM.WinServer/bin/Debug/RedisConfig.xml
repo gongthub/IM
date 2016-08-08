@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Redis Key 集合-->
+<KEYS>
+  <KEY Name="User_K" Value="User_Key">User集合对应RedisKey</KEY>
+  <KEY Name="DTOUser_K" Value="DTOUser_Key">DTOUser集合对应RedisKey</KEY>
+  <KEY Name="LogMgr_K" Value="LogMgr_IM_Key">LogMgr集合对应RedisKey</KEY>
+</KEYS>

@@ -1,0 +1,4 @@
+D:\MyFiles\IM\IM.SDK\bin\Debug\IM.SDK.dll
+D:\MyFiles\IM\IM.SDK\bin\Debug\IM.SDK.pdb
+D:\MyFiles\IM\IM.SDK\obj\Debug\IM.SDK.dll
+D:\MyFiles\IM\IM.SDK\obj\Debug\IM.SDK.pdb

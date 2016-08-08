@@ -1,0 +1,7 @@
+D:\MyFiles\IM\IM.IDAL\bin\Debug\IM.IDAL.dll
+D:\MyFiles\IM\IM.IDAL\bin\Debug\IM.IDAL.pdb
+D:\MyFiles\IM\IM.IDAL\obj\Debug\IM.IDAL.dll
+D:\MyFiles\IM\IM.IDAL\obj\Debug\IM.IDAL.pdb
+D:\MyFiles\IM\IM.IDAL\bin\Debug\IM.Model.dll
+D:\MyFiles\IM\IM.IDAL\bin\Debug\IM.Model.pdb
+D:\MyFiles\IM\IM.IDAL\obj\Debug\IM.IDAL.csprojResolveAssemblyReference.cache

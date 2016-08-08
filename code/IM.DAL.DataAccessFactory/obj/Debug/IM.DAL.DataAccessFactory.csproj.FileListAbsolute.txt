@@ -1,0 +1,9 @@
+D:\MyFiles\IM\IM.DAL.DataAccessFactory\bin\Debug\IM.DAL.DataAccessFactory.dll
+D:\MyFiles\IM\IM.DAL.DataAccessFactory\bin\Debug\IM.DAL.DataAccessFactory.pdb
+D:\MyFiles\IM\IM.DAL.DataAccessFactory\bin\Debug\IM.IDAL.dll
+D:\MyFiles\IM\IM.DAL.DataAccessFactory\bin\Debug\IM.Model.dll
+D:\MyFiles\IM\IM.DAL.DataAccessFactory\bin\Debug\IM.IDAL.pdb
+D:\MyFiles\IM\IM.DAL.DataAccessFactory\bin\Debug\IM.Model.pdb
+D:\MyFiles\IM\IM.DAL.DataAccessFactory\obj\Debug\IM.DAL.DataAccessFactory.csprojResolveAssemblyReference.cache
+D:\MyFiles\IM\IM.DAL.DataAccessFactory\obj\Debug\IM.DAL.DataAccessFactory.dll
+D:\MyFiles\IM\IM.DAL.DataAccessFactory\obj\Debug\IM.DAL.DataAccessFactory.pdb

@@ -1,0 +1,7 @@
+D:\MyFiles\IM\IM.WinClient\bin\Debug\IM.WinClient.exe.config
+D:\MyFiles\IM\IM.WinClient\bin\Debug\IM.WinClient.exe
+D:\MyFiles\IM\IM.WinClient\bin\Debug\IM.WinClient.pdb
+D:\MyFiles\IM\IM.WinClient\obj\Debug\IM.WinClient.Properties.Resources.resources
+D:\MyFiles\IM\IM.WinClient\obj\Debug\IM.WinClient.csproj.GenerateResource.Cache
+D:\MyFiles\IM\IM.WinClient\obj\Debug\IM.WinClient.exe
+D:\MyFiles\IM\IM.WinClient\obj\Debug\IM.WinClient.pdb
