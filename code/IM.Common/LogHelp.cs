@@ -60,7 +60,7 @@ namespace IM.Common
         /// 写入日志
         /// </summary>
         /// <param name="messages"></param> 
-        public void WriteLog(string messages,int type)
+        public void WriteLog(string messages, int type)
         {
             if (!Common.FileHelp.DirectoryIsExists(LOGURL))
             {
@@ -81,7 +81,7 @@ namespace IM.Common
         /// <param name="messages">描述</param>  
         public void WriteLogRedis(string messages, int type)
         {
-            
+
             List<Model.LogModel> models = new List<Model.LogModel>();
             models = Common.RedisHelp.redisHelp.Get<List<Model.LogModel>>(LOGMGR_KEY);
             if (models == null)
@@ -173,7 +173,28 @@ namespace IM.Common
                 }
             }
             return strs.ToString();
-        } 
-        #endregion 
+        }
+        #endregion
+
+
+
+        #region 清空日志 +void ClearLogs()
+        /// <summary>
+        /// 清空日志
+        /// </summary>
+        /// <returns></returns>
+        public void ClearLogs()
+        {
+            StringBuilder strs = new StringBuilder();
+            List<Model.LogModel> models = new List<Model.LogModel>();
+            models = Common.RedisHelp.redisHelp.Get<List<Model.LogModel>>(LOGMGR_KEY);
+
+            if (models != null && models.Count > 0)
+            {
+                models = new List<Model.LogModel>();
+            }
+            Common.RedisHelp.redisHelp.Set<List<Model.LogModel>>(LOGMGR_KEY, models);
+        }
+        #endregion
     }
 }

@@ -2,3 +2,7 @@ D:\MyFiles\IM\IM.Model\bin\Debug\IM.Model.dll
 D:\MyFiles\IM\IM.Model\bin\Debug\IM.Model.pdb
 D:\MyFiles\IM\IM.Model\obj\Debug\IM.Model.dll
 D:\MyFiles\IM\IM.Model\obj\Debug\IM.Model.pdb
+D:\MyFiles\GIT\IM\Code\IM.Model\bin\Debug\IM.Model.dll
+D:\MyFiles\GIT\IM\Code\IM.Model\bin\Debug\IM.Model.pdb
+D:\MyFiles\GIT\IM\Code\IM.Model\obj\Debug\IM.Model.dll
+D:\MyFiles\GIT\IM\Code\IM.Model\obj\Debug\IM.Model.pdb

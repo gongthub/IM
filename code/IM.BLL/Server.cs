@@ -14,21 +14,23 @@ namespace IM.BLL
     public class Server
     {
 
+        private static List<Model.DTOUser> users = new List<Model.DTOUser>();
+
         /// <summary>
         /// 服务器IP地址
         /// </summary>;
-        private string ServerIP;
+        private static string ServerIP;
 
         /// <summary>
         /// 监听端口
         /// </summary>
-        private int ServerPort;
-        private TcpListener myListener;
+        private static int ServerPort;
+        private static TcpListener myListener;
 
         /// <summary>
         /// 是否正常退出所有接收线程
         /// </summary>
-        bool isNormalExit = false;
+        static bool isNormalExit = false;
 
         /// <summary>
         /// 构造函数
@@ -38,7 +40,7 @@ namespace IM.BLL
             ServerIP = ConfigurationManager.AppSettings["ServerHost"].ToString();
             ServerPort = Convert.ToInt32(ConfigurationManager.AppSettings["ServerHostPort"].ToString());
         }
-         
+
         /// <summary>
         /// 开始监听
         /// </summary>
@@ -81,7 +83,7 @@ namespace IM.BLL
                 }
                 Thread threadReceive = new Thread(ReceiveData);
                 threadReceive.Start(dtouser);
-                DTOUser.Add(dtouser);
+                users.Add(dtouser);
                 string log = string.Format("[{0}]进入", newClient.Client.RemoteEndPoint);
                 Common.LogHelp.logHelp.WriteLogRedis(log, Model.Enums.LogType.Normal);
                 log = string.Format("当前连接用户数：{0}", newClient.Client.RemoteEndPoint);
@@ -100,7 +102,7 @@ namespace IM.BLL
             Model.DTOUser dtouser = (Model.DTOUser)userState;
             if (dtouser.user == null)
             {
-                dtouser.user = new Model.User(); 
+                dtouser.user = new Model.User();
             }
             TcpClient client = dtouser.client;
             while (isNormalExit == false)
@@ -137,8 +139,8 @@ namespace IM.BLL
                         string talkString = receiveString.Substring(splitString[0].Length + splitString[1].Length + 2);
                         Common.LogHelp.logHelp.WriteLogRedis(string.Format("{0}对{1}说：{2}", dtouser.user.UserName, splitString[1], talkString), Model.Enums.LogType.Normal);
                         SendToClient(dtouser, "talk," + dtouser.user.UserName + "," + talkString);
-                        List<Model.DTOUser> userList = BLL.DTOUser.GetModels();
-                        foreach (Model.DTOUser target in userList)
+                        //List<Model.DTOUser> userList = BLL.DTOUser.GetModels();
+                        foreach (Model.DTOUser target in users)
                         {
                             if (target.user.UserName == splitString[1] && dtouser.user.UserName != splitString[1])
                             {
@@ -162,33 +164,33 @@ namespace IM.BLL
         /// <param name="message">信息内容</param>
         private void SendToAllClient(Model.DTOUser dtouser, string message)
         {
-            List<Model.DTOUser> userList = BLL.DTOUser.GetModels();
-            if (userList != null && userList.Count>0)
+            //List<Model.DTOUser> userList = BLL.DTOUser.GetModels();
+            if (users != null && users.Count > 0)
             {
                 string command = message.Split(',')[0].ToLower();
                 if (command == "login")
                 {
                     //获取所有客户端在线信息到当前登录用户
-                    for (int i = 0; i < userList.Count; i++)
+                    for (int i = 0; i < users.Count; i++)
                     {
-                        SendToClient(dtouser, "login," + userList[i].user.UserName);
+                        SendToClient(dtouser, "login," + users[i].user.UserName);
                     }
                     //把自己上线，发送给所有客户端
-                    for (int i = 0; i < userList.Count; i++)
+                    for (int i = 0; i < users.Count; i++)
                     {
-                        if (dtouser.user.UserName != userList[i].user.UserName)
+                        if (dtouser.user.UserName != users[i].user.UserName)
                         {
-                            SendToClient(userList[i], "login," + dtouser.user.UserName);
+                            SendToClient(users[i], "login," + dtouser.user.UserName);
                         }
                     }
                 }
                 else if (command == "logout")
                 {
-                    for (int i = 0; i < userList.Count; i++)
+                    for (int i = 0; i < users.Count; i++)
                     {
-                        if (userList[i].user.UserName != dtouser.user.UserName)
+                        if (users[i].user.UserName != dtouser.user.UserName)
                         {
-                            SendToClient(userList[i], message);
+                            SendToClient(users[i], message);
                         }
                     }
                 }
@@ -213,7 +215,7 @@ namespace IM.BLL
                     Common.LogHelp.logHelp.WriteLogRedis(log, Model.Enums.LogType.Normal);
                 }
                 else
-                { 
+                {
                     Common.LogHelp.logHelp.WriteLogRedis("发送失败", Model.Enums.LogType.Normal);
                 }
             }
@@ -232,10 +234,10 @@ namespace IM.BLL
         {
             if (dtouser.user != null)
             {
-                BLL.User.Remove(dtouser.user.UserName);
+                users.Remove(dtouser);
                 dtouser.Close();
             }
-            string log = string.Format("当前连接用户数：{0}", BLL.DTOUser.GetCount());
+            string log = string.Format("当前连接用户数：{0}", users.Count);
             Common.LogHelp.logHelp.WriteLogRedis(log, Model.Enums.LogType.Normal);
         }
 
@@ -250,18 +252,18 @@ namespace IM.BLL
         {
             Common.LogHelp.logHelp.WriteLogRedis("开始停止服务，并依次使用户退出！", Model.Enums.LogType.Normal);
             isNormalExit = true;
-            int count = BLL.DTOUser.GetCount();
-            List<Model.DTOUser> userList = BLL.DTOUser.GetModels();
+            int count = users.Count;
+            //List<Model.DTOUser> userList = BLL.DTOUser.GetModels();
 
-            if (userList != null && userList.Count > 0)
+            if (users != null && users.Count > 0)
             {
                 for (int i = count - 1; i >= 0; i--)
                 {
-                    RemoveUser(userList[i]);
+                    RemoveUser(users[i]);
                 }
             }
             //通过停止监听让 myListener.AcceptTcpClient() 产生异常退出监听线程
             myListener.Stop();
-        } 
+        }
     }
 }

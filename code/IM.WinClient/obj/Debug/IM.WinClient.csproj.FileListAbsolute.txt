@@ -5,3 +5,12 @@ D:\MyFiles\IM\IM.WinClient\obj\Debug\IM.WinClient.Properties.Resources.resources
 D:\MyFiles\IM\IM.WinClient\obj\Debug\IM.WinClient.csproj.GenerateResource.Cache
 D:\MyFiles\IM\IM.WinClient\obj\Debug\IM.WinClient.exe
 D:\MyFiles\IM\IM.WinClient\obj\Debug\IM.WinClient.pdb
+D:\MyFiles\GIT\IM\Code\IM.WinClient\bin\Debug\IM.WinClient.exe.config
+D:\MyFiles\GIT\IM\Code\IM.WinClient\bin\Debug\IM.WinClient.exe
+D:\MyFiles\GIT\IM\Code\IM.WinClient\bin\Debug\IM.WinClient.pdb
+D:\MyFiles\GIT\IM\Code\IM.WinClient\obj\Debug\IM.WinClient.Properties.Resources.resources
+D:\MyFiles\GIT\IM\Code\IM.WinClient\obj\Debug\IM.WinClient.csproj.GenerateResource.Cache
+D:\MyFiles\GIT\IM\Code\IM.WinClient\obj\Debug\IM.WinClient.exe
+D:\MyFiles\GIT\IM\Code\IM.WinClient\obj\Debug\IM.WinClient.pdb
+D:\MyFiles\GIT\IM\Code\IM.WinClient\obj\Debug\IM.WinClient.Main.resources
+D:\MyFiles\GIT\IM\Code\IM.WinClient\bin\Debug\App.config

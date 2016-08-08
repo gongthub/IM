@@ -31,11 +31,12 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.txtShow = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(156, 318);
+            this.btnStart.Location = new System.Drawing.Point(116, 322);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(338, 318);
+            this.btnStop.Location = new System.Drawing.Point(270, 322);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 23);
             this.btnStop.TabIndex = 1;
@@ -63,11 +64,22 @@
             this.txtShow.Size = new System.Drawing.Size(608, 300);
             this.txtShow.TabIndex = 2;
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(424, 322);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "清空日志";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 362);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.txtShow);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
@@ -84,6 +96,7 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.TextBox txtShow;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
